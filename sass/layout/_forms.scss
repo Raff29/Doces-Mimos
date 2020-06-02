@@ -71,7 +71,7 @@
 .products {
     background-color: $color-tertiary;
     display: grid;
-    grid-template-columns: repeat(6, 236px);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 5vw);
     gap: 1.5rem;
     padding: 1.5rem;
@@ -87,7 +87,7 @@
     &__item {
 
         &--1 {
-            grid-row: 5 / 8;
+            grid-row: 5 / 7;
             grid-column: 2 / 3;
         }
 
@@ -97,17 +97,17 @@
         }
 
         &--3 {
-            grid-row: 4 / 8;
+            grid-row: 4 / 7;
             grid-column: 3 / 4;
         }
 
         &--4 {
-           
+           grid-row: 1 / 4;
            
         }
 
         &--5 {
-            grid-row: 5 / 8;
+            grid-row: 5 / 7;
             grid-column: 1 / 2;
         }
         &--6 {
@@ -117,9 +117,15 @@
         }
 
         &--7 {
-        
+         grid-row: 1 / 4;
 
         }
+
+        &--8 {
+            grid-row: 4 / span 3;
+            grid-column: 4 / 7;
+
+        } 
 
     }
 }
