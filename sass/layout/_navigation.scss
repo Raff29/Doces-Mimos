@@ -1,0 +1,45 @@
+
+.nav {
+    padding: 2rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: white;
+
+  
+
+    &::after {
+        content: "";
+        height: 1px;
+        display: block;
+        background-color: currentColor;
+    }
+    
+
+    &__list {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-transform: uppercase;
+        text-align: center;
+
+        &--link {
+            text-decoration: none;
+            color: inherit;
+
+        
+        }
+
+        
+
+        &--1 {
+            grid-column: 2 / 3;
+        }
+
+        &--4 {
+            grid-row: 1 /2;
+            
+        }
+
+    }
+
+}

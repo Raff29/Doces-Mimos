@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.heading-2 {
+  color: #706161;
+  font-weight: 300;
+  font-size: 2.5rem; }
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 90vh 100vh 1fr; }
+
+.about {
+  background-color: #f6f6f6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  padding: 0 9rem; }
+  .about__header {
+    grid-column: 1 / 4;
+    justify-self: center;
+    text-transform: uppercase; }
+    .about__header::after {
+      display: block;
+      height: 2px;
+      background-color: #8785a2;
+      content: " ";
+      width: 100%;
+      margin: 0 auto; }
+  .about__us {
+    grid-row: 2 / 3;
+    margin: 4rem;
+    display: grid;
+    justify-items: center; }
+    .about__us--1 {
+      fill: #8785a2;
+      height: auto;
+      width: 5rem;
+      margin: 2rem 0; }
+    .about__us--2 {
+      fill: #8785a2;
+      height: auto;
+      width: 5rem;
+      margin: 2rem 0; }
+    .about__us--3 {
+      fill: #8785a2;
+      height: auto;
+      width: 5rem;
+      margin: 2rem 0; }
+  .about__description {
+    color: #706161;
+    font-size: 1.4rem; }
+
+.products {
+  background-color: #ffe2e2;
+  display: grid;
+  grid-template-columns: repeat(6, 236px);
+  grid-template-rows: repeat(6, 5vw);
+  gap: 1.5rem;
+  padding: 1.5rem; }
+  .products__img {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 100%;
+    display: block; }
+  .products__item--1 {
+    grid-row: 5 / 8;
+    grid-column: 2 / 3; }
+  .products__item--2 {
+    grid-row: 1 / 5;
+    grid-column: 1 / 3; }
+  .products__item--3 {
+    grid-row: 4 / 8;
+    grid-column: 3 / 4; }
+  .products__item--5 {
+    grid-row: 5 / 8;
+    grid-column: 1 / 2; }
+  .products__item--6 {
+    grid-row: 1 / 4;
+    grid-column: 3 / 5; }
+
+.footer {
+  background-color: #8785a2; }
+
+.header {
+  background-image: linear-gradient(#ffc7c7d2, #ffc7c7d2), url(/img/pastry.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed; }
+
+.main {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px; }
+  .main__heading {
+    margin-top: 10rem;
+    margin-left: 4rem;
+    grid-row: 2 / 3; }
+  .main__p {
+    font-size: 1.5rem;
+    grid-row: 3 /4;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    grid-column: 1 / 3; }
+
+.btn {
+  height: 3rem;
+  width: 100%;
+  grid-row: 4 / 5;
+  margin-left: 10rem;
+  margin-top: -2rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 2px; }
+
+.nav {
+  padding: 2rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: white; }
+  .nav::after {
+    content: "";
+    height: 1px;
+    display: block;
+    background-color: currentColor; }
+  .nav__list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-transform: uppercase;
+    text-align: center; }
+    .nav__list--link {
+      text-decoration: none;
+      color: inherit; }
+    .nav__list--1 {
+      grid-column: 2 / 3; }
+    .nav__list--4 {
+      grid-row: 1 /2; }
