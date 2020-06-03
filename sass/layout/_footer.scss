@@ -1,3 +1,5 @@
 .footer {
     background-color: $color-quaternary;
+    grid-row: footer-start / footer-end;
+    grid-column: full-start / full-end;
 }

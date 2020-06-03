@@ -10,6 +10,8 @@
     color: white;
     //margin: 14rem 0 5rem 5rem;
     display: grid;
+    grid-row: header-start / header-end;
+    grid-column: full-start / full-end;
     grid-template-columns: repeat(5 , 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 10px;
