@@ -47,7 +47,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: [header-start] minmax(16rem, 100vh) [header-end content-start] 90vh [content-end gallery-start] minmax(auto, 100vh) [gallery-end forms-start] 100vh [forms-end footer-start] 90vh [footer-end];
+  grid-template-rows: [header-start] minmax(16rem, 100vh) [header-end content-start] 90vh [content-end gallery-start] minmax(auto, 100vh) [gallery-end forms-start] 100vh [forms-end footer-start] 20vh [footer-end];
   grid-template-columns: [full-start] minmax(100%, auto) [full-end]; }
 
 .about {
@@ -149,15 +149,28 @@ body {
 .footer {
   background-color: #8785a2;
   grid-row: footer-start / footer-end;
-  grid-column: full-start / full-end; }
-  .footer__items {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    flex-wrap: wrap; }
+  grid-column: full-start / full-end;
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  align-items: baseline;
+  font-size: 1.7rem;
+  color: #f6f6f6;
+  text-transform: uppercase; }
   .footer__list {
     display: flex;
+    list-style-type: none;
+    width: 30rem;
     justify-content: space-evenly; }
+    .footer__list > * {
+      padding-left: 2rem; }
+  .footer__icon {
+    margin-left: 4rem; }
+    .footer__icon--1 {
+      height: 3rem;
+      width: 3rem; }
+  .footer__copyright {
+    padding-left: 1rem; }
 
 .header {
   background-image: linear-gradient(#ffc7c7d2, #ffc7c7d2), url(/img/pastry.jpg);
@@ -226,7 +239,7 @@ body {
   .form__image {
     background-image: linear-gradient(-70deg, rgba(246, 246, 246, 0.9) 0%, rgba(246, 246, 246, 0.9) 50%, transparent 50%), url(/img/forms.jpg);
     width: 66%;
-    height: 95%;
+    height: 80%;
     grid-column: 2 / 7;
     grid-row: 2 / 6;
     border-radius: 5%;
