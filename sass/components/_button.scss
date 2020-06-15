@@ -1,0 +1,24 @@
+.btn {
+    height: 3rem;
+    width: 100%;
+    grid-row: 4 / 5;
+    margin-left: 10rem;
+    margin-top: -2rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 2px;
+
+    &__contact {
+        margin: .5rem 3rem 2rem;
+        background-color: rgba($color-quaternary, .3);
+        font-weight: 200;
+        width: 60%;
+        border-radius: 10px;
+        
+       
+    }
+}

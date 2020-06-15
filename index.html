@@ -4,9 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="css/style.css" class="">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type="image/png" href="img/cook.png" alt="Icons made by www.freepik.com/ Freepik www.flaticon.com/">
+        <link rel="stylesheet" href="css/style.css" class="">
 
         <title>Doces Mimos</title>
     </head>
@@ -197,15 +197,51 @@
         </section>
 
         <section class="form">
-            <forms class="contact">
+            <div class="form__image"></div>
+            <forms class="contact" action="/" method="POST">
+        
+                <h3 class="contact__heading heading-3">
+                    Faca ja a sua encomenda!
+                </h3>
                 <div class="contact__form">
-                    Forms
+                    <label for="name" class="contact__form--label">Nome Completo</label>
+                    <input type="text "id="name"class="contact__form--name" placeholder="Nome Completo" required>
                 </div>
+                <div class="contact__form">
+                    <label for="email" class="contact__form--label">Endereco de email</label>
+                    <input type="email "id="email"class="contact__form--email" placeholder="Endereco de Email" required>
+                </div>
+                <div class="contact__form">
+                    <label for="phone" class="contact__form--label">Numero</label>
+                    <input type="tel "id="phone"class="contact__form--phone" placeholder="Numero" required>
+                </div>
+                <div class="contact__form">
+                    <label for="message" class="contact__form--label">Mensagem</label>
+                    <textarea type="text "id="message"class="contact__form--message" placeholder="Mensagem" required></textarea>
+                </div>
+
+                <button class="btn btn__contact"><span>Enviar</span></button>
+     
             </forms>
         </section>
 
         <footer class="footer">
-            footer
+            <div class="footer__items">
+                <un class="footer__list">
+                    <li> Contact </li>
+                    <li>Privacy </li>
+                    <li>Terms </li>
+                    <li>Sitemap </li>
+                </un>
+            </div>
+            <div class="footer__icon">
+                <a href="https://www.instagram.com/marcia.docesmimos/" target="_blank">
+                    <img src="/img/iconmonstr-instagram-11.svg" class="footer__icon--1">  
+                </a>
+            </div>
+            <div class="footer__copyright">
+                <small>&copy; Copyright 2020, Doces Mimos</small></small>
+            </div>
         </footer>
         
         

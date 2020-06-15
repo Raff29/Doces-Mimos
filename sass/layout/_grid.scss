@@ -3,8 +3,8 @@
     grid-template-rows: 
     [header-start]minmax(16rem, 100vh)
     [header-end content-start] 90vh 
-    [content-end gallery-start] 100vh
-    [gallery-end forms-start] 90vh
+    [content-end gallery-start] minmax(auto,100vh)
+    [gallery-end forms-start] 100vh
     [forms-end footer-start] 90vh [footer-end];
 
     grid-template-columns: 

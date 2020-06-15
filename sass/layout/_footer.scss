@@ -2,4 +2,34 @@
     background-color: $color-quaternary;
     grid-row: footer-start / footer-end;
     grid-column: full-start / full-end;
+    
+    
+    
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        flex-wrap: wrap;
+      
+      
+    }
+
+    &__list {
+       display: flex;
+       justify-content: space-evenly;
+
+    }
+
+    &__icons {
+
+        &--1 {
+
+        }
+
+    }
+
+    &__copyright {
+
+    }
 }
