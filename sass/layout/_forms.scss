@@ -8,7 +8,9 @@
     align-items: center;
     padding: 0 9rem;
 
-  
+    @media only screen and (max-width: $bp-medium) {
+        display: block
+    }
 
 
 
@@ -16,6 +18,11 @@
         grid-column: 1 / 4;
         justify-self: center;
         text-transform: uppercase;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2rem;
+            padding-top: 3rem;
+        }
 
         &::after {
             display: block;
@@ -35,6 +42,9 @@
         margin: 4rem;
         display: grid;
         justify-items: center;
+        
+
+        
         
 
   

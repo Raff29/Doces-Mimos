@@ -44,6 +44,9 @@ body {
   @media only screen and (max-width: 68.75em) {
     .btn {
       margin-top: 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .btn {
+      margin-top: -10rem; } }
   .btn__contact {
     margin: .5rem 3rem 2rem;
     background-color: rgba(135, 133, 162, 0.3);
@@ -62,7 +65,17 @@ body {
   @media only screen and (max-width: 68.75em) {
     .container {
       display: grid;
-      grid-template-rows: [header-start] minmax(16rem, 70vh) [header-end content-start] minmax(auto, 70rem) [content-end gallery-start] minmax(auto, 50rem) [gallery-end forms-start] 60vh [forms-end footer-start] 20vh [footer-end];
+      grid-template-rows: [header-start] minmax(16rem, 80vh) [header-end content-start] minmax(auto, 70rem) [content-end gallery-start] minmax(auto, 50rem) [gallery-end forms-start] 100vh [forms-end footer-start] 15vh [footer-end];
+      grid-template-columns: [full-start] minmax(100%, auto) [full-end]; } }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      display: grid;
+      grid-template-rows: [header-start] minmax(16rem, 70vh) [header-end content-start] minmax(auto, 95rem) [content-end gallery-start] minmax(auto, 50rem) [gallery-end forms-start] 60vh [forms-end footer-start] 10vh [footer-end];
+      grid-template-columns: [full-start] minmax(100%, auto) [full-end]; } }
+  @media only screen and (max-width: 37.5em) {
+    .container {
+      display: grid;
+      grid-template-rows: [header-start] minmax(16rem, 80vh) [header-end content-start] minmax(auto, 95rem) [content-end gallery-start] minmax(auto, 50rem) [gallery-end forms-start] 60vh [forms-end footer-start] 10vh [footer-end];
       grid-template-columns: [full-start] minmax(100%, auto) [full-end]; } }
 
 .about {
@@ -74,10 +87,17 @@ body {
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
   padding: 0 9rem; }
+  @media only screen and (max-width: 56.25em) {
+    .about {
+      display: block; } }
   .about__header {
     grid-column: 1 / 4;
     justify-self: center;
     text-transform: uppercase; }
+    @media only screen and (max-width: 56.25em) {
+      .about__header {
+        font-size: 2rem;
+        padding-top: 3rem; } }
     .about__header::after {
       display: block;
       height: 2px;
@@ -209,12 +229,20 @@ body {
     margin-top: 10rem;
     margin-left: 4rem;
     grid-row: 2 / 3; }
+    @media only screen and (max-width: 37.5em) {
+      .main__heading {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3; } }
   .main__p {
     font-size: 1.5rem;
     grid-row: 3 /4;
     margin-top: 2rem;
     margin-left: 4rem;
     grid-column: 1 / 3; }
+    @media only screen and (max-width: 37.5em) {
+      .main__p {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3; } }
 
 .nav {
   padding: 2rem;
@@ -266,6 +294,10 @@ body {
       .form__image {
         height: 78%;
         width: 88%; } }
+    @media only screen and (max-width: 56.25em) {
+      .form__image {
+        height: 104%;
+        width: 115%; } }
 
 .contact {
   grid-row: 2 / 5;
@@ -274,6 +306,9 @@ body {
   @media only screen and (max-width: 68.75em) {
     .contact {
       transform: translateX(-10%); } }
+  @media only screen and (max-width: 56.25em) {
+    .contact {
+      transform: translate(-50%, -4%); } }
   .contact__heading {
     margin-top: 12rem; }
     @media only screen and (max-width: 68.75em) {
@@ -295,6 +330,9 @@ body {
       width: 90%;
       transition: all .3s;
       font-style: italic; }
+      @media only screen and (max-width: 56.25em) {
+        .contact__form--name {
+          width: 20rem; } }
     .contact__form--email {
       display: block;
       border: none;
@@ -302,6 +340,9 @@ body {
       transition: all .3s;
       font-style: italic;
       height: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .contact__form--email {
+          width: 20rem; } }
     .contact__form--phone {
       display: block;
       height: 2rem;
@@ -309,6 +350,9 @@ body {
       width: 90%;
       transition: all .3s;
       font-style: italic; }
+      @media only screen and (max-width: 56.25em) {
+        .contact__form--phone {
+          width: 20rem; } }
     .contact__form--message {
       border: none;
       display: block;
@@ -317,6 +361,9 @@ body {
       transition: all .3s;
       font-family: "Roboto";
       font-style: italic; }
+      @media only screen and (max-width: 56.25em) {
+        .contact__form--message {
+          width: 20rem; } }
     .contact__form--label {
       font-size: 1.2rem;
       font-weight: 300; }
