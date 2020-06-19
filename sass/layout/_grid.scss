@@ -9,5 +9,20 @@
 
     grid-template-columns: 
     [full-start] minmax(100%, auto) [full-end];
+
+    @media only screen and (max-width: $bp-large) {
+
+        display: grid;
+        grid-template-rows: 
+        [header-start]minmax(16rem, 70vh)
+        [header-end content-start] minmax(auto,70rem) 
+        [content-end gallery-start] minmax(auto,50rem)
+        [gallery-end forms-start] 60vh
+        [forms-end footer-start] 20vh [footer-end];
+    
+        grid-template-columns: 
+        [full-start] minmax(100%, auto) [full-end];
+    }
+
 }
 

@@ -2,6 +2,10 @@
     color: $color-paragraph;
     font-weight: 300;
     font-size: 2.5rem;
+
+    @media only screen and (max-width: $bp-large) {
+        text-align: center;
+    }
 }
 
 .heading-3 {

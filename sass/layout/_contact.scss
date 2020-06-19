@@ -18,6 +18,12 @@
         grid-row: 2 / 6;
         border-radius: 5%;
         transform: scaleX(-1); 
+
+        @media only screen and (max-width: $bp-large) {
+            height: 78%;
+            width: 88%;
+        }
+         
     }
 } 
 
@@ -28,6 +34,10 @@
     grid-column: 3/ 4;
     transform: translateX(5%);
 
+    @media only screen and (max-width: $bp-large) {
+        transform: translateX(-10%);
+    }
+
     
     
 
@@ -35,6 +45,12 @@
     &__heading { 
        
        margin-top: 12rem;
+
+       @media only screen and (max-width: $bp-large) {
+           margin-top: 17rem;
+           font-size: 1.9rem;
+           
+       }
     }
 
     &__form {
@@ -43,6 +59,10 @@
        font-family: "Roboto";
        font-size: 1.5rem;
        //font-style: italic;
+
+       @media only screen and (max-width: $bp-large) {
+           font-size: 1.3rem;
+       }
 
         &--name {
             display: block;

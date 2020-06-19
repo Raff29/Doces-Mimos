@@ -18,6 +18,9 @@ body {
   color: #706161;
   font-weight: 300;
   font-size: 2.5rem; }
+  @media only screen and (max-width: 68.75em) {
+    .heading-2 {
+      text-align: center; } }
 
 .heading-3 {
   color: #8785a2;
@@ -38,17 +41,29 @@ body {
   font-weight: 400;
   font-size: 2rem;
   padding: 2px; }
+  @media only screen and (max-width: 68.75em) {
+    .btn {
+      margin-top: 1rem; } }
   .btn__contact {
     margin: .5rem 3rem 2rem;
     background-color: rgba(135, 133, 162, 0.3);
     font-weight: 200;
     width: 60%;
     border-radius: 10px; }
+    @media only screen and (max-width: 68.75em) {
+      .btn__contact {
+        margin-top: 1rem;
+        transform: translateX(-10%); } }
 
 .container {
   display: grid;
   grid-template-rows: [header-start] minmax(16rem, 100vh) [header-end content-start] 90vh [content-end gallery-start] minmax(auto, 100vh) [gallery-end forms-start] 100vh [forms-end footer-start] 20vh [footer-end];
   grid-template-columns: [full-start] minmax(100%, auto) [full-end]; }
+  @media only screen and (max-width: 68.75em) {
+    .container {
+      display: grid;
+      grid-template-rows: [header-start] minmax(16rem, 70vh) [header-end content-start] minmax(auto, 70rem) [content-end gallery-start] minmax(auto, 50rem) [gallery-end forms-start] 60vh [forms-end footer-start] 20vh [footer-end];
+      grid-template-columns: [full-start] minmax(100%, auto) [full-end]; } }
 
 .about {
   background-color: #f6f6f6;
@@ -119,6 +134,9 @@ body {
     transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s; }
+    @media only screen and (max-width: 68.75em) {
+      .products__item {
+        opacity: 1; } }
     .products__item:hover {
       opacity: 1;
       -webkit-transform: scale(1.03);
@@ -244,18 +262,32 @@ body {
     grid-row: 2 / 6;
     border-radius: 5%;
     transform: scaleX(-1); }
+    @media only screen and (max-width: 68.75em) {
+      .form__image {
+        height: 78%;
+        width: 88%; } }
 
 .contact {
   grid-row: 2 / 5;
   grid-column: 3/ 4;
   transform: translateX(5%); }
+  @media only screen and (max-width: 68.75em) {
+    .contact {
+      transform: translateX(-10%); } }
   .contact__heading {
     margin-top: 12rem; }
+    @media only screen and (max-width: 68.75em) {
+      .contact__heading {
+        margin-top: 17rem;
+        font-size: 1.9rem; } }
   .contact__form {
     margin-bottom: 1rem;
     border-radius: 2px;
     font-family: "Roboto";
     font-size: 1.5rem; }
+    @media only screen and (max-width: 68.75em) {
+      .contact__form {
+        font-size: 1.3rem; } }
     .contact__form--name {
       display: block;
       height: 2rem;

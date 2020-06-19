@@ -8,6 +8,10 @@
     align-items: center;
     padding: 0 9rem;
 
+  
+
+
+
     &__header {
         grid-column: 1 / 4;
         justify-self: center;
@@ -41,6 +45,7 @@
             width: 5rem;
             margin: 2rem 0;
             
+            
            
         }
 
@@ -49,6 +54,8 @@
             height: auto;
             width: 5rem;
             margin: 2rem 0;
+
+
             
         }
 
@@ -100,6 +107,10 @@
         transition: opacity 0.5s, -webkit-transform 0.5s;
         transition: transform 0.5s, opacity 0.5s;
         transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+
+        @media only screen and (max-width: $bp-large) {
+            opacity: 1;
+        }
 
         &:hover {
             opacity: 1;
