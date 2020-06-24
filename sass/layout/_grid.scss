@@ -42,10 +42,10 @@
         display: grid;
         grid-template-rows: 
         [header-start]minmax(16rem, 80vh)
-        [header-end content-start] minmax(auto,95rem) 
-        [content-end gallery-start] minmax(auto,50rem)
+        [header-end content-start] minmax(auto,105rem) 
+        [content-end gallery-start] minmax(auto,60rem)
         [gallery-end forms-start] 60vh
-        [forms-end footer-start] 10vh [footer-end];
+        [forms-end footer-start] 35vh [footer-end];
     
         grid-template-columns: 
         [full-start] minmax(100%, auto) [full-end];

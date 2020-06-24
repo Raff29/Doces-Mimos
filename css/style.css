@@ -57,6 +57,12 @@ body {
       .btn__contact {
         margin-top: 1rem;
         transform: translateX(-10%); } }
+    @media only screen and (max-width: 37.5em) {
+      .btn__contact {
+        font-size: 1.7rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .btn__contact {
+        font-size: 1.5rem; } }
 
 .container {
   display: grid;
@@ -75,7 +81,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .container {
       display: grid;
-      grid-template-rows: [header-start] minmax(16rem, 80vh) [header-end content-start] minmax(auto, 95rem) [content-end gallery-start] minmax(auto, 50rem) [gallery-end forms-start] 60vh [forms-end footer-start] 10vh [footer-end];
+      grid-template-rows: [header-start] minmax(16rem, 80vh) [header-end content-start] minmax(auto, 105rem) [content-end gallery-start] minmax(auto, 60rem) [gallery-end forms-start] 60vh [forms-end footer-start] 35vh [footer-end];
       grid-template-columns: [full-start] minmax(100%, auto) [full-end]; } }
 
 .about {
@@ -90,6 +96,10 @@ body {
   @media only screen and (max-width: 56.25em) {
     .about {
       display: block; } }
+  @media only screen and (max-width: 37.5em) {
+    .about {
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(6, 1fr); } }
   .about__header {
     grid-column: 1 / 4;
     justify-self: center;
@@ -110,6 +120,11 @@ body {
     margin: 4rem;
     display: grid;
     justify-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .about__us {
+        margin-left: -5rem;
+        margin-right: -5rem;
+        margin-bottom: -4rem; } }
     .about__us--1 {
       fill: #8785a2;
       height: auto;
@@ -138,6 +153,15 @@ body {
   grid-template-rows: repeat(6, 1fr);
   gap: 1.5rem;
   padding: 1.5rem 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .products {
+      grid-row: gallery-start / gallery-end;
+      grid-column: full-start / full-end;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 1rem;
+      padding-left: 0;
+      padding-bottom: 1rem; } }
   .products__img {
     width: 100%;
     -o-object-fit: cover;
@@ -164,25 +188,52 @@ body {
     .products__item--1 {
       grid-row: 5 / 7;
       grid-column: 2 / 3; }
+      @media only screen and (max-width: 37.5em) {
+        .products__item--1 {
+          grid-row: 2 / 3;
+          grid-column: 4 / 5; } }
     .products__item--2 {
       grid-row: 1 / 5;
       grid-column: 1 / 3; }
+      @media only screen and (max-width: 37.5em) {
+        .products__item--2 {
+          grid-row: 1 / 2;
+          grid-column: 4 / 5; } }
     .products__item--3 {
       grid-row: 4 / 7;
       grid-column: 3 / 4; }
+      @media only screen and (max-width: 37.5em) {
+        .products__item--3 {
+          grid-row: 1 / 2; } }
     .products__item--4 {
       grid-row: 1 / 4; }
+      @media only screen and (max-width: 37.5em) {
+        .products__item--4 {
+          display: none; } }
     .products__item--5 {
       grid-row: 5 / 7;
       grid-column: 1 / 2; }
+      @media only screen and (max-width: 37.5em) {
+        .products__item--5 {
+          display: none; } }
     .products__item--6 {
       grid-row: 1 / 4;
       grid-column: 3 / 5; }
+      @media only screen and (max-width: 37.5em) {
+        .products__item--6 {
+          display: none; } }
     .products__item--7 {
       grid-row: 1 / 4; }
+      @media only screen and (max-width: 37.5em) {
+        .products__item--7 {
+          grid-column: 3 / 4;
+          grid-row: 2 / 3; } }
     .products__item--8 {
       grid-row: 4 / span 3;
       grid-column: 4 / 7; }
+      @media only screen and (max-width: 37.5em) {
+        .products__item--8 {
+          display: none; } }
 
 .footer {
   background-color: #8785a2;
@@ -195,20 +246,42 @@ body {
   font-size: 1.7rem;
   color: #f6f6f6;
   text-transform: uppercase; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 2rem; } }
   .footer__list {
     display: flex;
     list-style-type: none;
     width: 30rem;
     justify-content: space-evenly; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__list {
+        flex-direction: column;
+        align-items: center; } }
+    @media only screen and (max-width: 31.25em) {
+      .footer__list {
+        font-size: 1.5rem; } }
     .footer__list > * {
       padding-left: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .footer__list > * {
+          padding-left: 0;
+          padding-bottom: 1rem; } }
   .footer__icon {
     margin-left: 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__icon {
+        margin-left: 0rem; } }
     .footer__icon--1 {
       height: 3rem;
       width: 3rem; }
   .footer__copyright {
     padding-left: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__copyright {
+        padding-left: 0; } }
 
 .header {
   background-image: linear-gradient(#ffc7c7d2, #ffc7c7d2), url(/img/pastry.jpg);
@@ -298,6 +371,11 @@ body {
       .form__image {
         height: 104%;
         width: 115%; } }
+    @media only screen and (max-width: 37.5em) {
+      .form__image {
+        height: 133%;
+        width: 115%;
+        background-image: linear-gradient(rgba(246, 246, 246, 0.9) 100%, rgba(246, 246, 246, 0.9) 100%, transparent 40%), url(/img/forms.jpg); } }
 
 .contact {
   grid-row: 2 / 5;
@@ -305,16 +383,29 @@ body {
   transform: translateX(5%); }
   @media only screen and (max-width: 68.75em) {
     .contact {
-      transform: translateX(-10%); } }
+      transform: translateX(-10%);
+      margin: -4rem; } }
   @media only screen and (max-width: 56.25em) {
     .contact {
-      transform: translate(-50%, -4%); } }
+      transform: translate(-30%, -4%); } }
+  @media only screen and (max-width: 37.5em) {
+    .contact {
+      margin: 1rem;
+      margin-left: 15rem;
+      margin-bottom: 4rem; } }
   .contact__heading {
     margin-top: 12rem; }
     @media only screen and (max-width: 68.75em) {
       .contact__heading {
         margin-top: 17rem;
         font-size: 1.9rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .contact__heading {
+        font-size: 1.7rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .contact__heading {
+        font-size: 1.45rem;
+        margin-top: 14rem; } }
   .contact__form {
     margin-bottom: 1rem;
     border-radius: 2px;
@@ -323,6 +414,12 @@ body {
     @media only screen and (max-width: 68.75em) {
       .contact__form {
         font-size: 1.3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .contact__form {
+        font-size: 1.5rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .contact__form {
+        font-size: 1.2rem; } }
     .contact__form--name {
       display: block;
       height: 2rem;
