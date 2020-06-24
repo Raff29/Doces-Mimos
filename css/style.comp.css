@@ -241,8 +241,7 @@ body {
   grid-column: full-start / full-end;
   display: flex;
   justify-content: center;
-  padding-top: 3rem;
-  align-items: baseline;
+  align-items: center;
   font-size: 1.7rem;
   color: #f6f6f6;
   text-transform: uppercase; }
